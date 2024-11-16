@@ -1,0 +1,48 @@
+/* grid-background.css */
+body {
+    background-color: #f0f0f0; /* Couleur de base */
+    background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px; /* Taille des carreaux */
+    height: 100vh; /* S'assure que le body occupe tout l'écran */
+    margin: 0; /* Retire les marges par défaut */
+}
+
+#sandwich::before {
+  content: '';
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 35px;
+  height: 5px;
+}
+
+  
+#sandwich {
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 35px;
+  height: 5px;
+  cursor: pointer;
+  z-index: 1000; /* S'assure qu'il reste au-dessus */
+}
+
+#sandwich::after {
+  content: '';
+  position: fixed;
+  top: 40px;
+  left: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 35px;
+  height: 5px;
+}

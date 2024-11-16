@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* reset.css (based on Meyer reset)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Set block display for HTML5 elements */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* General resets */
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* grid-background.css */
+body {
+  background-color: #f0f0f0; /* Couleur de base */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px; /* Taille des carreaux */
+  height: 100vh; /* S'assure que le body occupe tout l'écran */
+  margin: 0; /* Retire les marges par défaut */
+}
+
+#sandwich::before {
+  content: "";
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 35px;
+  height: 5px;
+}
+
+#sandwich {
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 35px;
+  height: 5px;
+  cursor: pointer;
+  z-index: 1000; /* S'assure qu'il reste au-dessus */
+}
+
+#sandwich::after {
+  content: "";
+  position: fixed;
+  top: 40px;
+  left: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 35px;
+  height: 5px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: -25%; /* Le menu est caché hors de l'écran à gauche */
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: white;
+  width: 20%; /* Largeur fixe du menu */
+  height: 100vh;
+  padding: 20px;
+  transition: transform 0.3s ease-out; /* Animation fluide lors de l'affichage */
+  transform: translateX(0); /* Position initiale */
+}
+nav h1 {
+  font-size: 56px;
+  text-align: center;
+  margin: 30px;
+}
+nav ul h2 {
+  font-size: 32px;
+  margin: 15px;
+}
+nav ul li {
+  font-size: 20px;
+  margin: 10px 40px;
+}
+
+nav.active {
+  transform: translateX(110%); /* Fait glisser le menu pour qu'il entre dans le cadre */
+}
+
+/*# sourceMappingURL=styles.css.map */
