@@ -1,6 +1,7 @@
 # EDITEUR
 
 Dans cet exercice nous allons créer un éditeur sur le web, il permettra à l'utilisateur de:
+
     1. Créer un paragraphe,
         En éditer le style:
         - couleur
