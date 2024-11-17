@@ -1,12 +1,15 @@
 /* grid-background.css */
 body {
-    background-color: #f0f0f0; /* Couleur de base */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #f0f0f0; 
     background-image: 
       linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
-    background-size: 20px 20px; /* Taille des carreaux */
-    height: 100vh; /* S'assure que le body occupe tout l'écran */
-    margin: 0; /* Retire les marges par défaut */
+    background-size: 20px 20px; 
+    height: 100vh;
+    margin: 0;
 }
 
 #sandwich::before {
@@ -32,7 +35,7 @@ body {
   width: 35px;
   height: 5px;
   cursor: pointer;
-  z-index: 1000; /* S'assure qu'il reste au-dessus */
+  z-index: 100000;
 }
 
 #sandwich::after {
@@ -45,4 +48,14 @@ body {
   border-radius: 5px;
   width: 35px;
   height: 5px;
+}
+
+#output {
+  display: flex;
+  flex-direction: column; /* Si tu veux empiler les outputs verticalement */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Occupation de toute la hauteur */
+  width: 100%;  /* Occupation de toute la largeur */
+  border: 1px solid #ccc;
 }

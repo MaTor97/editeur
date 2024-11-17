@@ -1,0 +1,17 @@
+main {
+    position: relative;
+    height: 100vh;
+
+    div:hover {
+        cursor: move;
+        border: 1px dotted rebeccapurple;
+    }
+}
+
+.draggable {
+    width: fit-content;
+    max-width: 500px;
+    height: fit-content;
+    background-color: lightblue;
+    position: relative;
+  }

@@ -1,21 +1,20 @@
 nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: -25%; /* Le menu est caché hors de l'écran à gauche */
     margin: 10px;
     border: 1px solid black;
-    border-radius: 15px;
     background-color: white;
     width: 20%; /* Largeur fixe du menu */
     height: 100vh;
     padding: 20px;
-    transition: transform 0.3s ease-out; /* Animation fluide lors de l'affichage */
-    transform: translateX(0); /* Position initiale */
+    z-index: 10000;
+    transition: transform 0.3s ease-out;
+    transform: translateX(0); 
 
     h1 {
-        font-size: 56px;
-        text-align: center;
-        margin: 30px;
+        font-size: 48px;
+        margin: 30px 15px;
     }
 
     ul h2 {
@@ -25,6 +24,10 @@ nav {
       
     ul li {
       font-size: 20px;
+      margin: 10px 40px;
+    }
+    
+    input {
       margin: 10px 40px;
     }
   }

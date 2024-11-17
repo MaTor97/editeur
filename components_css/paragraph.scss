@@ -1,0 +1,11 @@
+// Paragraph css
+div[id^="output-"] {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: rgba($color: #000000, $alpha: 0.0);
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    width: fit-content;
+    max-width: 500px; /* Peut être ajusté si tu veux limiter la largeur */
+  }
