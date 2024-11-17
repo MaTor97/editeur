@@ -15,6 +15,7 @@ export function createBox(){
     const box = document.createElement('div')
     box.classList = 'draggable__box'
 
+    // Append the box to the output
     output.appendChild(box);
     makeDraggable(box) 
 }

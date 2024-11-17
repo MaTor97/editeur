@@ -7,4 +7,3 @@ import { makeDraggable } from './components_js/drag_n_drop.js';
 // Appelez les fonction pour activer le comportement du menu
 toggleMenu();
 paragraphs();
-createBox();
