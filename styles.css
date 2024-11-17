@@ -113,35 +113,32 @@ body {
 nav {
   position: absolute;
   top: 0;
-  left: -25%; /* Le menu est caché hors de l'écran à gauche */
+  left: -500px;
   margin: 10px;
   border: 1px solid black;
   background-color: white;
-  width: 20%; /* Largeur fixe du menu */
+  min-width: 300px;
+  width: fit-content;
   height: 100vh;
   padding: 20px;
   z-index: 10000;
   transition: transform 0.3s ease-out;
   transform: translateX(0);
+  overflow: hidden;
 }
 nav h1 {
   font-size: 48px;
-  margin: 30px 15px;
+  margin: 30px 0;
 }
-nav ul h2 {
-  font-size: 32px;
-  margin: 15px;
-}
-nav ul li {
-  font-size: 20px;
-  margin: 10px 40px;
+nav details summary {
+  font-size: 24px;
 }
 nav input {
   margin: 10px 40px;
 }
 
 nav.active {
-  transform: translateX(110%); /* Fait glisser le menu pour qu'il entre dans le cadre */
+  transform: translateX(500px); /* Fait glisser le menu pour qu'il entre dans le cadre */
 }
 
 div[id^=output-] {
@@ -152,7 +149,7 @@ div[id^=output-] {
   color: #333;
   text-align: center;
   width: fit-content;
-  max-width: 500px; /* Peut être ajusté si tu veux limiter la largeur */
+  max-width: 250px; /* Peut être ajusté si tu veux limiter la largeur */
 }
 
 main {
@@ -164,12 +161,17 @@ main div:hover {
   border: 1px dotted rebeccapurple;
 }
 
-.draggable {
+.draggable__paragraph {
   width: fit-content;
   max-width: 500px;
   height: fit-content;
   background-color: lightblue;
   position: relative;
+}
+.draggable__box {
+  width: 250px;
+  height: 444px;
+  background-color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

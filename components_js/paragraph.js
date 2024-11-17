@@ -1,4 +1,5 @@
 // Paragraphes
+// Imports
 import { makeDraggable } from './drag_n_drop.js';
 
 // Variables
@@ -15,7 +16,7 @@ export function paragraphs() {
 
     // Créer l'élement où écrire le texte
     const text = document.createElement('div');
-    text.classList.add('draggable');
+    text.classList.add('draggable__paragraph');
 
     // Construire les fonctions à appliquer
     function updateContent() {

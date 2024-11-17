@@ -9,9 +9,17 @@ main {
 }
 
 .draggable {
-    width: fit-content;
-    max-width: 500px;
-    height: fit-content;
-    background-color: lightblue;
-    position: relative;
+    &__paragraph {
+        width: fit-content;
+        max-width: 500px;
+        height: fit-content;
+        background-color: lightblue;
+        position: relative;
+    }
+
+    &__box {
+        width: 250px;
+        height: 444px;
+        background-color: white;
+    }
   }
